@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas RevoU</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">ReUvo</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#our-profile">Our Profile</a></li>
+                    <li><a href="#our-facilitation">Our facilitation</a></li>
+                    <li><a href="#achievment">Achievment</a></li>
+                    <li><a href="#message-us">Message us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+    <section id="home">
+            <h1>Hi <span id="nama"></span>, Welcome to ReUvo course</h1>
+            <img src="https://awsimages.detik.net.id/community/media/visual/2023/02/08/gambar-pemandangan-11_169.jpeg?w=700&q=90" width="1000" height="800">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quisquam aperiam optio distinctio provident odit qui. Temporibus distinctio aliquid accusamus officiis architecto, ullam saepe eaque odit nesciunt libero itaque eum ea. Quaerat, sunt maxime veniam corrupti corporis ut beatae eum libero illo assumenda quam modi eveniet labore, quisquam quibusdam quod molestias, ipsum atque. Iusto perferendis aliquam similique ipsa nisi ab necessitatibus officiis facere obcaecati. Commodi debitis animi earum perspiciatis magnam aliquam temporibus provident maiores eaque maxime praesentium, labore, ipsa ratione iure voluptas libero, laboriosam culpa ea delectus fuga blanditiis. Aperiam aspernatur voluptatem maxime itaque praesentium pariatur amet asperiores libero distinctio.</p>
+
+        <script>
+            var name = prompt("Masukan Nama Kamu");
+            var element = document.getElementById("nama").innerText = name;
+        </script>
+    </section>
+
+    <section id="our-profile">
+        <h1>Our profile</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et incidunt amet necessitatibus quae assumenda cum similique, odio ex voluptas velit.</p>
+        <p><a href="Profile.html" class="tbl-pink">Selengkapnya</a></p>
+    </section>
+
+    <section id="our-facilitation">
+        <h2>Our facilitation</h2>
+        <div class="partner-list">
+            <div class="kartu-partner">
+                <img src="https://statik.tempo.co/data/2018/06/03/id_709908/709908_720.jpg">
+                <p>Bakso Gratis</p>
+            </div>
+            <div class="kartu-partner">
+                <img src="https://res.cloudinary.com/ruparupa-com/image/upload//f_auto,q_auto:eco/v1480502949/037450-1_1.jpg">
+                <p>Ada perosotan cuuuy</p>
+            </div>
+            <div class="kartu-partner">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ux7KwfLMUI6CamSiuTsXkVmXBAN3dhZUsQ&usqp=CAU">
+                <p>Bootcamp yang nyaman</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="message-us">
+    <h2> Message Us</h2>
+    <main class="main-content">
+        <div class="form-section">
+        <form class="massage-form" name="massage-form" onsubmit="return validateform()">
+        <table>
+
+        <tr>    
+            <td>Nama</td>
+            <td>:</td>
+            <td><input placeholder="Nama" type="text" name="full-name" /></td>
+        </tr>
+        <br/>
+
+        <tr>
+            <td>Tanggal lahir</td>
+            <td>:</td>
+            <td><input type="date" name="birth-date" /></td>
+        </tr>
+        <br/>
+
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+                <input type="radio" id="male" name="gender" value="Laki-laki"/>
+                <label for="male">Laki Laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan"/>
+                <label for="female">Perempuan</label> 
+            </td>
+            <br/>
+        </tr>
+
+        <tr>
+            <td>Pesan</td>
+            <td>:</td>
+            <td><textarea placeholder="Pesan" name="messages"></textarea></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+        </table>
+         </form>
+         <script>
+            function validateform() {
+                var name = document.forms['massage-form']['full-name'].value;
+                var date = document.forms['massage-form']['birth-date'].value;
+                var gender = document.forms['massage-form']['gender'].value;
+                var messages = document.forms['massage-form']['messages'].value;
+
+                if (name == "") {
+                    alert("Nama tidak boleh kosong");
+                    return false;
+                }
+                if (date == "") {
+                    alert("Tanggal lahir tidak boleh kosong");
+                    return false;
+                }
+                if (gender == "") {
+                    alert("Jenis kelamin tidak boleh kosong");
+                    return false;
+                }
+                if (messages == "") {
+                    alert("Pesan tidak boleh kosong");
+                    return false;
+                }
+
+                document.getElementById("sender-full-name").innerText = name;
+                document.getElementById("sender-birth-date").innerText = date;
+                document.getElementById("sender-gender").innerText = gender;
+                document.getElementById("sender-messages").innerText = messages;
+
+                return false;
+            }
+         </script>
+
+         <div class="form-output">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td> 
+                    <td><span id="sender-full-name"></span></td>
+                </tr>
+                <tr>
+                    <td>Tanggal lahir</td>
+                    <td>:</td> 
+                    <td><span id="sender-birth-date"></span></td>
+                </tr>
+                <tr>
+                    <td>Jenis kelamin</td>
+                    <td>:</td> 
+                    <td><span id="sender-gender"></span></td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td> 
+                    <td><span id="sender-messages"></span></td>
+                </tr>
+            </table>
+         </div>
+        </div>
+    </main>
+    </div>
+    </section>
+
+    <div id="kontak">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>ReUvo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempore suscipit, facere voluptatum corporis distinctio asperiores quaerat rem quae ab.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempore suscipit, facere voluptatum corporis distinctio asperiores quaerat rem quae ab.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <p>
+                        <b>@nee_zaer</b>
+                        <b>@ignyanabil</b>
+                        <b>@ignyaojan</b>
+                        <b>@ignyajulpi</b>
+                        <b>@ignyaazka</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copyright">
+        <div class="wrapper1">
+            &copy; 2023. <b>ReUvo.</b> All Rights Reserved
+        </div>
+    </div>
+</body>
+</html>

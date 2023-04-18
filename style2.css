@@ -1,0 +1,256 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'noto sans'sans-serif;
+    background-color: #FFFFFF;
+}
+
+#home h1 {
+    margin-bottom: 25px;
+    font-size: 50px;
+    font-weight: 800px;
+}
+
+.wrapper {
+    width:1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: 800px;
+    float: left;
+    font-family:focus-within;
+    color: #F7DB6A;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #F4B183;
+    z-index: 1;
+    border-bottom: 1px solid #41644A;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 800px;
+    float: inline-start;
+    font-family:focus-within;
+    color: black;
+    display: grid;
+}
+
+.form-output {
+    float: left;
+    margin-top: 50px;
+}
+
+
+.form-section {
+    text-align: left;
+}
+
+#home img {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#home p {
+    margin: 10px;
+}
+
+section {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+.main-content .form-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.main-content .form-section form.main-content .form-section div {
+    width: 100%;
+}
+
+#message-us table {
+    float: left;
+    display: inline;
+}
+
+.partner-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-partner {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-partner img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu-partner p {
+    font-family: 'comic sans ms';
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+#kontak {
+    background: #dedede;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #F7DB6A;
+    width: 100%;
+    line-height: 50px;
+}
+
+.footer-section b {
+    display: grid;
+    padding: 5px;
+}
+
+#copyright {
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+a.tbl-pink {
+    background: #D21312;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-pink:hover {
+    background: #27E1C1;
+    text-decoration: none;
+}
+
+#our-profile h1 {
+    font-size: 50px;
+    font-weight: 800px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#our-profile p {
+    display: flex;
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu-tutor  {
+        width: 50%;
+    }
+
+    .kartu-partner {
+        width: 50%;
+    }
+}
